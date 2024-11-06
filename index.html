@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="ja" dir="ltr">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="google" content="notranslate"/>
+    <title>myproject_9GSAP</title>
+    <script defer src="main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vivus@0.4.6/dist/vivus.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/pixi.js@8/dist/pixi.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="https://unpkg.com/ityped@1.0.3"></script>
+    <link rel="stylesheet" href="style.css" />
+
+</head>
+<body class="global-layout">
+    <header class="global-layout__header header">
+        <h1>NWCO</h1>
+        <nav>
+            <ul class="header__navigation">
+                <li>
+                    <a href="#" class="navitext">ABOUT</a>
+                </li>
+                <li>
+                    <a href="#" class="navitext">WORKS</a>
+                </li>
+                <li>
+                    <a href="#" class="navitext">COMPANY</a>
+                </li>
+                <li>
+                    <a href="#" class="navitext">CONTACT</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <button class="global-layout__hamburger-button hamburger-button">
+        <img class="hamburger-button__open" src="open_.svg" alt="OPEN" width="32"/>
+        <img class="hamburger-button__close" src="close_.svg" alt="CLOSE" width="32"/>
+        <span class="hamburger-button__label"> MENU </span>
+    </button>
+    <main class="global-layout__contents contents-layout">
+        <main class="global-layout__contents contents-layout">
+            <section class="main-visual">
+                <h2 class="main-visual__title">WILDLIFE</h2>
+            </section>
+            <section class="missions">
+                <h2 class="section-title missions__title"></h2>
+                <div class="missions__text">
+                    <p class="missions__text-inner">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis
+                        consequuntur corporis cum, et eveniet fuga incidunt, iure minus
+                        nihil odio saepe sapiente, sunt vel! Alias neque porro quis ratione soluta?
+                    </p>
+                </div>
+            </section>
+            <section class="service">
+                <h2 class="section-title service__title">ANIMALS</h2>
+                <div class="alternating-layout">
+                    <div class="alternating-layout__item">
+                        <img src= "./images/service_image1.jpg" alt="アジアスイギュウ" width="800" height="600" class="alternating-layout__image"/>
+                        <div class="alternating-layout__description">
+                            <p class="alternating-layout__text">The water buffalo is a common animal, especially in agricultural regions across Southeast Asia, and can also often be seen in areas like Okinawa’s Sakishima Islands.
+                            </p>
+                            <a href="https://www.wwf.or.jp/campaign/50th/wildlife_animals.html#ani08" class="buttonOutlineGradient">
+                                <span class="buttonOutlineGradient__item">more info</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="alternating-layout__item">
+                        <img src="./images/service_image2.jpg" alt="アフリカのロバ" width="800" height="600" class="alternating-layout__image"/>
+                        <div class="alternating-layout__description">
+                            <p class="alternating-layout__text">The African wild donkey is a species of wild donkey that inhabits the northeastern part of the African continent, particularly in the volcanic landscapes along the East African Rift.
+                            </p>
+                            <a href="https://www.wwf.or.jp/campaign/50th/wildlife_animals.html#ani09" class="buttonOutlineGradient">
+                                <span class="buttonOutlineGradient__item">more info</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="alternating-layout__item">
+                        <img src="./images/service_image3.jpg" alt="トラ" width="800" height="600" class="alternating-layout__image"/>
+                        <div class="alternating-layout__description">
+                            <p class="alternating-layout__text">The tiger is a large carnivorous member of the Felidae family and represents the Asian continent's iconic predator. 
+                            </p>
+                            <a href="https://www.wwf.or.jp/campaign/50th/wildlife_animals.html#ani10" class="buttonOutlineGradient">
+                                <span class="buttonOutlineGradient__item">more info</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="news">
+                <h2 class="section-title news__title">NEWS</h2>
+                <ul class="news__list simple-list">
+                    <li class="simple-list__item">
+                        <dl class="timeline">
+                            <dt class="timeline__time">
+                                <time datetime="2021-03-01">2023.03.01</time>
+                            </dt>
+                            <dd class="timeline__description">We have published our conservation efforts.</dd>
+                        </dl>
+                    </li>
+                    <li class="simple-list__item">
+                        <dl class="timeline">
+                            <dt class="timeline__time">
+                                <time datetime="2021-02-01">2021.02.01</time>
+                            </dt>
+                            <dd class="timeline__description">We have published our conservation efforts</dd>
+                        </dl>
+                    </li>
+                    <li class="simple-list__item">
+                        <dl class="timeline">
+                            <dt class="timeline__time">
+                                <time datetime="2021-01-01">2021.01.01</time>
+                            </dt>
+                            <dd class="timeline__description"> We have launched our website.</dd>
+                        </dl>
+                    </li>
+                </ul>
+            </section>
+            <section class="works">
+                <h2 class="section-title">Conservation<br>Efforts</h2>
+                <ul class="card-list works__list">
+                    <li class="card-list__item card">
+                        <img class="card__image" src="./images/works_image1.jpg"  height="600" width="800" alt="endangered species of dolphins"/>
+                    <h3 class="card__title">「dolphin」</h3>
+                    <p class="card__text">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi debitis deleniti doloremque est facere fuga,
+                    </p>
+                    </li>
+                    <li class="card-list__item card">
+                        <img class="card__image" src="./images/works_image2.jpg" height="600" width="800" alt="endangered species of penguins"/>
+                    <h3 class="card__title">「penguin」</h3>
+                    <p class="card__text">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi debitis deleniti doloremque est facere fuga,
+                    </p>
+                    </li>
+                    <li class="card-list__item card">
+                        <img class="card__image" src="./images/works_image3.jpg" height="600" width="800" alt="endangered polar bear"/>
+                    <h3 class="card__title">「Polar bear」</h3>
+                    <p class="card__text">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi debitis deleniti doloremque est facere fuga,
+                    </p>
+                    </li>
+                </ul>
+            </section>
+            <section class="company">
+                <h2 class="section-title">COMPANY</h2>
+                <dl class="simple-table company__table">
+                    <dt class="simple-table__head">Company</dt>
+                    <dd class="simple-table__description">National Wildlife Conservation Organization</dd>
+                    <dt class="simple-table__head">Services</dt>
+                    <dd class="simple-table__description">conservation efforts</dd>
+                    <dt class="simple-table__head">CEO</dt>
+                    <dd class="simple-table__description">HOGE FUGA PIYO</dd>
+                    <dt class="simple-table__head">Partner</dt>
+                    <dd class="simple-table__description"> African National Park <br />Indian National Park<br /> East Asia Wildlife Conservation Organization <br />others</dd>
+                </dl>
+            </section>
+            <section class="credits">
+                <h2 class="section-title">Endangered<br> Species</h2>
+                <p class="credits__lead">Thanks for fundraising activities</p>
+                <ul class="tag-list credits__list">
+                    <li>
+                        <a
+                        class="tag-list__item"
+                        href="https://www.worldwildlife.org/species/sunda-tiger"
+                        >Sumatran tiger</a>
+                    </li>
+                    <li>
+                        <a
+                        class="tag-list__item"
+                        href="https://www.worldwildlife.org/species/asian-elephant"
+                        >Asian elephant</a>
+                    </li>
+                    <li>
+                        <a
+                        class="tag-list__item"
+                        href="https://www.worldwildlife.org/species/hawksbill-turtle"
+                        >Hawksbill turtle</a>
+                    </li>
+                    <li>
+                        <a
+                        class="tag-list__item"
+                        href="https://www.worldwildlife.org/species/snow-leopard"
+                        >Snow leopard</a>
+                    </li>
+                    <li>
+                        <a
+                        class="tag-list__item"
+                        href="https://www.worldwildlife.org/species/white-rhino"
+                        >Northern white rhinoceros</a>
+                    </li>
+                    <li>
+                        <a
+                        class="tag-list__item"
+                        href="https://www.worldwildlife.org/species/african-wild-dog"
+                        >African wild dog</a>
+                    </li>
+                    <li>
+                        <a
+                        class="tag-list__item"
+                        href="https://www.worldwildlife.org/species/vaquita"
+                        >Vaquita</a>
+                    </li>
+                </ul>
+            </section>
+    </main>
+    <footer class="global-layout__footer footer">
+        <small>NWCO Inc. 2024</small>
+    </footer>
+</body>
+</html>
